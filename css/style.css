@@ -64,7 +64,7 @@ h1 {
         width: 0;
     }
     to {
-        width: 380px;
+        width: 350px;
     }
 }
 @keyframes blinkTextCursor{
@@ -81,7 +81,7 @@ h1 {
     position: relative;
     display: inline-block;
     margin: 1em;
-    max-width: 380px;
+    max-width: 340px;
     width: calc(100% - 2em);
     vertical-align: top;
     overflow: hidden;
