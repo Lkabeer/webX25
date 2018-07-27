@@ -21,7 +21,7 @@ setTimeout( function(){
 inputX.addEventListener('blur', function() {
     if(this.value == 178) {
         console.log('right answer');
-        titleX.innerText = "You got 10% off ツ"
+        titleX.innerText = "Congrats U got 10% off"
     }
     this.value = "";
 });
