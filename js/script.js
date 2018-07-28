@@ -24,7 +24,7 @@ function rightAnswerX(answerX) {
         titleX.style.color = "red";
         console.log('Right Answer Congrats U got 10% off');
         setTimeout(function () {
-            window.location.href = "https://lkabeer.github.io/webX21/";
+            window.location.href = "https://goo.gl/9eqSfe";
         }, 3000);
     }
     answerX.value = "";
