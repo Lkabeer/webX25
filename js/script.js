@@ -10,18 +10,32 @@ window.addEventListener('load', function () {
 });
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'js/particlesjs-config.json', function() {
+particlesJS.load('particles-js', 'js/particlesjs-config.json', function () {
     console.log('callback - particles.js config loaded');
 });
 
-setTimeout( function(){
+setTimeout(function () {
     inputX.focus();
 }, 3300);
 
-inputX.addEventListener('blur', function() {
-    if(this.value == 178) {
-        console.log('right answer');
-        titleX.innerText = "Congrats U got 10% off"
+function rightAnswerX(answerX) {
+    if (answerX.value == 178) {
+        titleX.innerText = "Congrats U got 10% off";
+        titleX.style.color = "red";
+        console.log('Right Answer Congrats U got 10% off');
+        setTimeout(function () {
+            window.location.href = "https://lkabeer.github.io/webX21/";
+        }, 3000);
     }
-    this.value = "";
+    answerX.value = "";
+}
+
+inputX.addEventListener('blur', function () {
+    rightAnswerX(inputX);
+});
+
+inputX.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        rightAnswerX(inputX);
+    }
 });
