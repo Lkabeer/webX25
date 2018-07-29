@@ -19,12 +19,13 @@ setTimeout(function () {
 }, 3300);
 
 function rightAnswerX(answerX) {
-    if (answerX.value == 178) {
-        titleX.innerText = "Congrats U got 10% off";
+    if (answerX.value == 718) {
+        titleX.innerText = "Congrats U won a free Workshop ツ";
+        titleX.style.fontSize = "125%";
         titleX.style.color = "red";
-        console.log('Right Answer Congrats U got 10% off');
+        console.log('Congrats U won a free Workshop ツ');
         setTimeout(function () {
-            window.location.href = "https://goo.gl/9eqSfe";
+            window.location.href = "https://goo.gl/forms/gfINEOv2y4X6pOcG3";
         }, 3000);
     }
     answerX.value = "";
