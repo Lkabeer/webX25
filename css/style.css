@@ -55,8 +55,8 @@ h1 {
 }
 
 .typeWritingX{
-    animation: typewriter 2s steps(35) 1s 1 normal both,
-                blinkTextCursor 500ms steps(35) infinite normal;
+    animation: typewriter 2s steps(22) 1s 1 normal both,
+                blinkTextCursor 500ms steps(22) infinite normal;
 }
 
 @keyframes typewriter{
